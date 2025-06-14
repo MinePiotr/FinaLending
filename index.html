@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinaLending — Премиум лендинги на чистом коде</title>
+    <meta name="description" content="Элитные лендинги на чистом коде без конструкторов. Максимальная скорость и конверсия.">
+
+    <!-- Open Graph метатеги -->
+    <meta property="og:title" content="FinaLending — Премиум лендинги на чистом коде">
+    <meta property="og:description" content="Эксклюзивные, молниеносные и конверсионные одностраничники без конструкторов">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://finalending.ru">
+
+    <!-- Предзагрузка ресурсов -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+    <!-- Подключаем наш CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Микроразметка Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "FinaLending",
+        "description": "Создание эксклюзивных лендингов на чистом коде для бизнеса",
+        "serviceType": "Разработка лендингов",
+        "areaServed": "Россия",
+        "offers": {
+            "@type": "Offer",
+            "price": "25000-45000",
+            "priceCurrency": "RUB"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+7-916-887-10-60",
+            "contactType": "Служба поддержки клиентов",
+            "email": "mineplayer474@gmail.com",
+            "availableLanguage": "Russian"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">FinaLending</a>
+
+            <nav aria-label="Основное меню">
+                <ul class="nav-links">
+                    <li><a href="#benefits">Преимущества</a></li>
+                    <li><a href="#process">Процесс</a></li>
+                    <li><a href="#pricing">Тарифы</a></li>
+                    <li><a href="#contact" class="btn">Заказать</a></li>
+                </ul>
+            </nav>
+
+            <button class="theme-toggle" id="themeToggle" aria-label="Переключить цветовую тему">
+                <i class="fas fa-moon"></i>
+            </button>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Открыть меню" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Мобильное меню -->
+    <div class="overlay" id="overlay"></div>
+    <div class="mobile-nav-links" id="mobileNavLinks">
+        <button class="close-menu" id="closeMenu" aria-label="Закрыть меню">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul>
+            <li><a href="#benefits">Преимущества</a></li>
+            <li><a href="#process">Процесс</a></li>
+            <li><a href="#pricing">Тарифы</a></li>
+            <li><a href="#contact">Заказать</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Элитные лендинги на <span class="highlight">чистом коде</span></h1>
+                <p>Эксклюзивные, молниеносные и конверсионные одностраничники без конструкторов. Привлекайте клиентов, а не трафик впустую.</p>
+                <div class="hero-btns">
+                    <a href="#pricing" class="btn">Выбрать тариф</a>
+                    <a href="#process" class="btn btn-outline">Как мы работаем</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <h2>Почему <span class="highlight">чистый код</span> превосходит конструкторы</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card card" aria-labelledby="benefit-speed">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 id="benefit-speed">Молниеносная скорость</h3>
+                    <p>Загрузка за 0.8 сек против 3-5 сек у шаблонов. Google ранжирует быстрые сайты выше, что увеличивает вашу видимость.</p>
+                </div>
+                <div class="benefit-card card" aria-labelledby="benefit-seo">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 id="benefit-seo">Максимальное SEO</h3>
+                    <p>Идеальная семантическая верстка. Рост позиций в поиске на 40-70% по сравнению с шаблонными решениями.</p>
+                </div>
+                <div class="benefit-card card" aria-labelledby="benefit-design">
+                    <div class="benefit-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 id="benefit-design">Эксклюзивный дизайн</h3>
+                    <p>Никаких шаблонов. Уникальный дизайн, который отражает ДНК вашего бренда, а не ограничения платформы.</p>
+                </div>
+                <div class="benefit-card card" aria-labelledby="benefit-responsive">
+                    <div class="benefit-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 id="benefit-responsive">Безупречная адаптивность</h3>
+                    <p>Идеальное отображение на всех устройствах. Mobile-First подход, который увеличивает конверсию с мобильных.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process" id="process">
+        <div class="container">
+            <h2>Наш <span class="highlight">процесс</span> создания</h2>
+            <div class="steps">
+                <div class="step card" aria-labelledby="step-analysis">
+                    <h3 id="step-analysis">Глубокий анализ</h3>
+                    <p>Изучаем ваш бизнес, целевую аудиторию и конкурентов. Определяем ключевые сообщения и цели лендинга.</p>
+                </div>
+                <div class="step card" aria-labelledby="step-design">
+                    <h3 id="step-design">Дизайн + Контент</h3>
+                    <p>Создаем уникальный прототип, утверждаем структуру. Разрабатываем продающие тексты с упором на конверсию.</p>
+                </div>
+                <div class="step card" aria-labelledby="step-coding">
+                    <h3 id="step-coding">Премиум-вёрстка</h3>
+                    <p>Пишем оптимизированный код (HTML5, CSS3, JS) без лишних зависимостей. Максимальная производительность.</p>
+                </div>
+                <div class="step card" aria-labelledby="step-launch">
+                    <h3 id="step-launch">Запуск и аналитика</h3>
+                    <p>Тестируем, подключаем аналитические системы. Передаем готовый продукт с инструкциями по управлению.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2>Наши <span class="highlight">тарифы</span></h2>
+            <div class="pricing-grid">
+                <div class="pricing-card card" aria-labelledby="basic-plan">
+                    <h3 id="basic-plan">Базовый</h3>
+                    <div class="price">25 000 <span>руб.</span></div>
+                    <ul class="features">
+                        <li>Главный экран с сильным УТП</li>
+                        <li>4 ключевых блока</li>
+                        <li>Адаптивная верстка</li>
+                        <li>Базовая SEO-оптимизация</li>
+                        <li>Срок реализации: 5 дней</li>
+                    </ul>
+                    <a href="#contact" class="btn">Заказать</a>
+                </div>
+
+                <div class="pricing-card card popular" aria-labelledby="optimal-plan">
+                    <h3 id="optimal-plan">Оптимальный</h3>
+                    <div class="price">35 000 <span>руб.</span></div>
+                    <ul class="features">
+                        <li>Эксклюзивный дизайн</li>
+                        <li>5 ключевых блоков + форма заявки</li>
+                        <li>Адаптивная верстка с анимациями</li>
+                        <li>Продвинутое SEO + микроразметка</li>
+                        <li>Интеграция с Telegram</li>
+                        <li>Срок реализации: 7 дней</li>
+                    </ul>
+                    <a href="#contact" class="btn">Заказать</a>
+                </div>
+
+                <div class="pricing-card card" aria-labelledby="premium-plan">
+                    <h3 id="premium-plan">Премиум</h3>
+                    <div class="price">45 000 <span>руб.</span></div>
+                    <ul class="features">
+                        <li>Эксклюзивный дизайн премиум-класса</li>
+                        <li>До 7 блоков + расширенная форма заявки</li>
+                        <li>Сложные анимации и интерактивные элементы</li>
+                        <li>Максимальное SEO + микроразметка</li>
+                        <li>Интеграция с CRM/Telegram</li>
+                        <li>Аналитика и A/B тестирование</li>
+                        <li>Срок реализации: 10 дней</li>
+                    </ul>
+                    <a href="#contact" class="btn">Заказать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-badge">
+                    <i class="fas fa-star"></i>
+                    Премиум качество
+                </div>
+                <h2>Ваш эксперт в создании лендингов</h2>
+                <p>Привет! Меня зовут <strong>Пётр</strong>. Я frontend-разработчик с фокусом на производительность и конверсию.</p>
+                <p><strong>Моя миссия:</strong> создавать не просто красивые сайты, а мощные инструменты продаж. Каждый пиксель и строка кода работают на ваш бизнес.</p>
+                <a href="#contact" class="btn">Обсудить проект</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>FinaLending</h3>
+                    <p>Создание эксклюзивных лендингов на чистом коде для бизнеса, который ценит качество и результат.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="mailto:mineplayer474@gmail.com">
+                                <i class="fas fa-envelope"></i>
+                                mineplayer474@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+79168871060">
+                                <i class="fas fa-phone"></i>
+                                +7 (916) 887-10-60
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/Finalizad0" target="_blank" rel="noopener">
+                                <i class="fab fa-telegram"></i>
+                                @Finalizad0
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Написать нам</h3>
+                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/mjkrrkoo" method="POST">
+                        <input type="text" name="name" placeholder="Ваше имя" required aria-label="Ваше имя">
+                        <div class="form-error" id="name-error">Пожалуйста, введите ваше имя</div>
+
+                        <input type="email" name="email" placeholder="Email" required aria-label="Email">
+                        <div class="form-error" id="email-error">Пожалуйста, введите корректный email</div>
+
+                        <!-- Добавленное поле для телефона -->
+                        <input type="tel" name="phone" placeholder="Телефон" required aria-label="Телефон">
+                        <div class="form-error" id="phone-error">Пожалуйста, введите ваш телефон</div>
+
+                        <textarea name="message" placeholder="Расскажите о вашем проекте" required aria-label="Сообщение"></textarea>
+                        <div class="form-error" id="message-error">Пожалуйста, введите ваше сообщение</div>
+
+                        <button type="submit" class="btn">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Подключаем наш JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
